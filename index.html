@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Godzilla</title>
+
+    <!--p5-->
+    <script src="js/p5.min.js"></script>
+    <script src="js/p5.dom.js"></script>
+    <script src="js/p5.serialport.js"></script>
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Open+Sans" rel="stylesheet">
+
+    <!--Main Logic-->
+    <script src="js/main.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+    <h1>Gojira</h1>
+    <div id="sketch"></div>
+    <div class="clips">
+        <video id="gojira1" width="576" height="324" muted preload="auto"><source src="media/video/gojira/1.mp4" type="video/mp4"></video>
+        <video id="gojira2" width="576" height="324" muted preload="auto"><source src="media/video/gojira/2.mp4" type="video/mp4"></video>
+        <video id="gojira3" width="576" height="324" muted preload="auto"><source src="media/video/gojira/3.mp4" type="video/mp4"></video>
+        <video id="gojira4" width="576" height="324" muted preload="auto"><source src="media/video/gojira/4.mp4" type="video/mp4"></video>
+        <video id="gojira5" width="576" height="324" muted preload="auto"><source src="media/video/gojira/5.mp4" type="video/mp4"></video>
+        <video id="gojira6" width="576" height="324" muted preload="auto"><source src="media/video/gojira/6.mp4" type="video/mp4"></video>
+        <video id="gojira7" width="576" height="324" muted preload="auto"><source src="media/video/gojira/7.mp4" type="video/mp4"></video>
+        <video id="gojira8" width="576" height="324" muted preload="auto"><source src="media/video/gojira/8.mp4" type="video/mp4"></video>
+        <video id="gojira9" width="576" height="324" muted preload="auto"><source src="media/video/gojira/9.mp4" type="video/mp4"></video>
+        <video id="gojira10" width="576" height="324" muted preload="auto"><source src="media/video/gojira/10.mp4" type="video/mp4"></video>
+        <video id="gojira11" width="576" height="324" muted preload="auto"><source src="media/video/gojira/11.mp4" type="video/mp4"></video>
+        <video id="gojira12" width="576" height="324" muted preload="auto"><source src="media/video/gojira/12.mp4" type="video/mp4"></video>
+        <video id="gojira13" width="576" height="324" muted preload="auto"><source src="media/video/gojira/13.mp4" type="video/mp4"></video>
+        <video id="gojira14" width="576" height="324" muted preload="auto"><source src="media/video/gojira/14.mp4" type="video/mp4"></video>
+        <video id="gojira15" width="576" height="324" muted preload="auto"><source src="media/video/gojira/15.mp4" type="video/mp4"></video>
+        <video id="gojira16" width="576" height="324" muted preload="auto"><source src="media/video/gojira/16.mp4" type="video/mp4"></video>
+        <video id="gojira17" width="576" height="324" muted preload="auto"><source src="media/video/gojira/17.mp4" type="video/mp4"></video>
+        <video id="gojira18" width="576" height="324" muted preload="auto"><source src="media/video/gojira/18.mp4" type="video/mp4"></video>
+        <video id="gojira19" width="576" height="324" muted preload="auto"><source src="media/video/gojira/19.mp4" type="video/mp4"></video>
+        <video id="gojira20" width="576" height="324" muted preload="auto"><source src="media/video/gojira/20.mp4" type="video/mp4"></video>
+        <video id="gojira21" width="576" height="324" muted preload="auto"><source src="media/video/gojira/21.mp4" type="video/mp4"></video>
+        <video id="gojira22" width="576" height="324" muted preload="auto"><source src="media/video/gojira/22.mp4" type="video/mp4"></video>
+        <video id="gojira23" width="576" height="324" muted preload="auto"><source src="media/video/gojira/23.mp4" type="video/mp4"></video>
+        <video id="gojira24" width="576" height="324" muted preload="auto"><source src="media/video/gojira/24.mp4" type="video/mp4"></video>
+        <video id="gojira25" width="576" height="324" muted preload="auto"><source src="media/video/gojira/25.mp4" type="video/mp4"></video>
+        <video id="gojira26" width="576" height="324" muted preload="auto"><source src="media/video/gojira/26.mp4" type="video/mp4"></video>
+        <video id="gojira27" width="576" height="324" muted preload="auto"><source src="media/video/gojira/27.mp4" type="video/mp4"></video>
+        <video id="gojira28" width="576" height="324" muted preload="auto"><source src="media/video/gojira/28.mp4" type="video/mp4"></video>
+        <video id="gojira29" width="576" height="324" muted preload="auto"><source src="media/video/gojira/29.mp4" type="video/mp4"></video>
+        <video id="gojira30" width="576" height="324" muted preload="auto"><source src="media/video/gojira/30.mp4" type="video/mp4"></video>
+        <video id="gojira31" width="576" height="324" muted preload="auto"><source src="media/video/gojira/31.mp4" type="video/mp4"></video>
+        <video id="gojira32" width="576" height="324" muted preload="auto"><source src="media/video/gojira/32.mp4" type="video/mp4"></video>
+        <video id="gojira33" width="576" height="324" muted preload="auto"><source src="media/video/gojira/33.mp4" type="video/mp4"></video>
+        <video id="gojira34" width="576" height="324" muted preload="auto"><source src="media/video/gojira/34.mp4" type="video/mp4"></video>
+        <video id="gojira35" width="576" height="324" muted preload="auto"><source src="media/video/gojira/35.mp4" type="video/mp4"></video>
+        <video id="godzilla1" width="576" height="324" muted preload="auto"><source src="media/video/godzilla/1.mp4" type="video/mp4"></video>
+        <video id="godzilla2" width="576" height="324" muted preload="auto"><source src="media/video/godzilla/2.mp4" type="video/mp4"></video>
+        <video id="godzilla3" width="576" height="324" muted preload="auto"><source src="media/video/godzilla/3.mp4" type="video/mp4"></video>
+        <video id="godzilla4" width="576" height="324" muted preload="auto"><source src="media/video/godzilla/4.mp4" type="video/mp4"></video>
+        <video id="godzilla5" width="576" height="324" muted preload="auto"><source src="media/video/godzilla/5.mp4" type="video/mp4"></video>
+        <video id="godzilla6" width="576" height="324" muted preload="auto"><source src="media/video/godzilla/6.mp4" type="video/mp4"></video>
+        <video id="godzilla7" width="576" height="324" muted preload="auto"><source src="media/video/godzilla/7.mp4" type="video/mp4"></video>
+        <video id="godzilla8" width="576" height="324" muted preload="auto"><source src="media/video/godzilla/8.mp4" type="video/mp4"></video>
+        <video id="godzilla9" width="576" height="324" muted preload="auto"><source src="media/video/godzilla/9.mp4" type="video/mp4"></video>
+        <video id="godzilla10" width="576" height="324" muted preload="auto"><source src="media/video/godzilla/10.mp4" type="video/mp4"></video>
+        <video id="godzilla11" width="576" height="324" muted preload="auto"><source src="media/video/godzilla/11.mp4" type="video/mp4"></video>
+        <video id="godzilla12" width="576" height="324" muted preload="auto"><source src="media/video/godzilla/12.mp4" type="video/mp4"></video>
+        <video id="godzilla13" width="576" height="324" muted preload="auto"><source src="media/video/godzilla/13.mp4" type="video/mp4"></video>
+        <video id="godzilla14" width="576" height="324" muted preload="auto"><source src="media/video/godzilla/14.mp4" type="video/mp4"></video>
+        <video id="godzilla15" width="576" height="324" muted preload="auto"><source src="media/video/godzilla/15.mp4" type="video/mp4"></video>
+        <video id="godzilla16" width="576" height="324" muted preload="auto"><source src="media/video/godzilla/16.mp4" type="video/mp4"></video>
+        <video id="godzilla17" width="576" height="324" muted preload="auto"><source src="media/video/godzilla/17.mp4" type="video/mp4"></video>
+        <video id="godzilla18" width="576" height="324" muted preload="auto"><source src="media/video/godzilla/18.mp4" type="video/mp4"></video>
+        <video id="godzilla19" width="576" height="324" muted preload="auto"><source src="media/video/godzilla/19.mp4" type="video/mp4"></video>
+        <video id="godzilla20" width="576" height="324" muted preload="auto"><source src="media/video/godzilla/20.mp4" type="video/mp4"></video>
+        <video id="godzilla21" width="576" height="324" muted preload="auto"><source src="media/video/godzilla/21.mp4" type="video/mp4"></video>
+        <video id="godzilla22" width="576" height="324" muted preload="auto"><source src="media/video/godzilla/22.mp4" type="video/mp4"></video>
+        <video id="godzilla23" width="576" height="324" muted preload="auto"><source src="media/video/godzilla/23.mp4" type="video/mp4"></video>
+        <video id="godzilla24" width="576" height="324" muted preload="auto"><source src="media/video/godzilla/24.mp4" type="video/mp4"></video>
+        <video id="godzilla25" width="576" height="324" muted preload="auto"><source src="media/video/godzilla/25.mp4" type="video/mp4"></video>
+        <video id="godzilla26" width="576" height="324" muted preload="auto"><source src="media/video/godzilla/26.mp4" type="video/mp4"></video>
+        <video id="godzilla27" width="576" height="324" muted preload="auto"><source src="media/video/godzilla/27.mp4" type="video/mp4"></video>
+        <video id="godzilla28" width="576" height="324" muted preload="auto"><source src="media/video/godzilla/28.mp4" type="video/mp4"></video>
+        <video id="godzilla29" width="576" height="324" muted preload="auto"><source src="media/video/godzilla/29.mp4" type="video/mp4"></video>
+        <video id="godzilla30" width="576" height="324" muted preload="auto"><source src="media/video/godzilla/30.mp4" type="video/mp4"></video>
+        <video id="godzilla31" width="576" height="324" muted preload="auto"><source src="media/video/godzilla/31.mp4" type="video/mp4"></video>
+        <video id="godzilla32" width="576" height="324" muted preload="auto"><source src="media/video/godzilla/32.mp4" type="video/mp4"></video>
+        <video id="godzilla33" width="576" height="324" muted preload="auto"><source src="media/video/godzilla/33.mp4" type="video/mp4"></video>
+        <video id="godzilla34" width="576" height="324" muted preload="auto"><source src="media/video/godzilla/34.mp4" type="video/mp4"></video>
+        <video id="godzilla35" width="576" height="324" muted preload="auto"><source src="media/video/godzilla/35.mp4" type="video/mp4"></video>
+        <video id="godzilla36" width="576" height="324"loop muted preload="auto"><source src="media/video/godzilla/36.mp4" type="video/mp4"></video>
+    </div>
+    <div class="quote">
+        <p id="quoteP"></p>
+    </div>
+</body>
+</html>
